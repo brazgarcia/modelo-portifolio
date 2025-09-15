@@ -4,7 +4,11 @@
 :root {
     --cor-primaria: black;
     --cor-segundaria: white;
-    --cor-terciaria: rgb(255, 123, 0);
+    --cor-terciaria: #ff7b00;
+    --cor-hover: #2c2c2c;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-segundaria: 'Montserrat', sans-serif;
 }
 
 * {
@@ -14,12 +18,12 @@
 
 .corpo {
     box-sizing: border-box;
-    background-color: black;
+    background-color: var(--cor-primaria);
     color: white;
 }
 
 .cabecalho {
-    background-color: rgb(255, 123, 0);
+    background-color: var(--cor-terciaria);
     padding: 2% 0% 2% 15%;
 }
 
@@ -30,15 +34,15 @@
 
 .cabecalho__link {
     text-decoration: none;
-    color: black;
+    color: var(--cor-primaria);
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primaria);
     font-weight: 600;
     padding: 3px;
 }
 
 .titulo__destaque {
-    color: rgb(255, 123, 0);
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
@@ -57,19 +61,21 @@
 
 .apresentacao__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    color: var(--cor-segundaria);
+    font-family: var(--font-segundaria);
 }
 
 .apresentacao__texto {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-segundaria);
+    font-family: var(--font-primaria);
     text-align: start;
 }
 
 .apresentacao__nome:hover {
-    color: rgb(255, 123, 0);
+    color: var(--cor-terciaria);
     font-weight: bold;
-    border: solid 1px white;
+    border: solid 1px var(--cor-segundaria);
     padding: 0 2px;
 }
 
@@ -81,8 +87,8 @@
 }
 
 .apresentacao__subtitulo {
-    font-family: 'Krona One', sans-serif ;
-    color: rgb(255, 123, 0);
+    font-family: var(--font-segundaria);
+    color: var(--cor-terciaria);
     font-weight: 400;
 }
 
@@ -90,31 +96,31 @@
     display: flex;
     justify-content: center;
     gap: 16px;
-    background-color: black;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-segundaria);
     padding: 7px;
-    border: solid 2px rgb(255, 123, 0);
+    border: solid 2px var(--cor-terciaria);
     border-radius: 8px;
     width: 250px;
     font-size: 24px;
     font-weight: 600;
     padding: 21px 0;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primaria);
 }
 
 .apresentacao__link:hover {
-    background-color:rgb(44, 44, 44);
-    color: rgb(255, 123, 0);;
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
 }
 .apresentacao__imagem {
     width: 550px;
-    border: double 5px rgb(255, 123, 0);    
+    border: double 5px var(--cor-terciaria);    
 }
 
 .rodape {
-    background-color: rgb(255, 123, 0);
-    color: black;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     display: flex;
     gap: 15px;
     padding: 25px;
@@ -124,7 +130,7 @@
 }
 
 .rodape__texto {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primaria);
     font-size: 24px;
     font-weight: 400;
 }
