@@ -34,7 +34,7 @@
 .cabecalho__link {
     text-decoration: none;
     color: var(--cor-primaria);
-    font-size: 1.8rem;
+    font-size: 1.0rem;
     font-family: var(--font-primaria);
     font-weight: 600;
     padding: 3px;
@@ -60,13 +60,13 @@
 }
 
 .apresentacao__titulo {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     color: var(--cor-segundaria);
     font-family: var(--font-segundaria);
 }
 
 .apresentacao__texto {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     color: var(--cor-segundaria);
     font-family: var(--font-primaria);
     text-align: start;
@@ -104,9 +104,9 @@
     align-items: center;
     width: 50%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 21px 25px;
+    padding: 11px 15px;
     text-decoration: none;
     font-family: var(--font-primaria);
 }
@@ -126,14 +126,14 @@
     color: var(--cor-primaria);
     display: flex;
     gap: 15px;
-    padding: 25px;
+    padding: 2% 0% 2% 0%;
     text-align: center;
     flex-direction: column;
 }
 
 .rodape__texto {
     font-family: var(--font-primaria);
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     font-weight: 400;
 }
 
